@@ -1,0 +1,49 @@
+#cover-container {
+  position: relative;
+  width: 400px;
+}
+
+#cover {
+  background-image: url(https://www.large.be/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwc5fee09c/images/2/6/7/6/267685-emp.jpg?sw=1000&sh=800&sm=fit&sfrm=png);
+  background-size: 100%;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 2s linear infinite;
+  animation-play-state: paused;
+}
+
+#btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-container > button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+#btn-container > button > i {
+  transition: 150ms all linear;
+  font-size: 50px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
